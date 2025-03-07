@@ -30,6 +30,7 @@
     "apexcharts": "^3.41.0",
     "formik": "^2.4.6",
     "headlessui": "^0.0.0",
+    "i": "^0.3.7",
     "jsvectormap": "^1.5.3",
     "lucide-react": "^0.475.0",
     "match-sorter": "^6.3.1",
