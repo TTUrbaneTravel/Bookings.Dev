@@ -1,0 +1,275 @@
+.radio-custom {
+  border: 2px solid #f63bb5; /* Blue-500 */
+  border-radius: 50%; /* Makes it circular */
+  transition: border-color 0.2s;
+}
+
+.radio-custom:focus {
+  outline: none;
+  /* box-shadow: 0 0 0 2px #93c5fd; Blue-300 */
+}
+
+.radio-custom:hover {
+  border-color: #af4c1e; /* Blue-700 */
+}
+
+.svg-background-div {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0"%3E%3Cpath d="m38.09 53.672c1.4453-1.4453 5.7422-5.7422 5.7422-5.7422l-7.8906-3.4141c-0.59375-0.25781-1.0195-0.78906-1.1406-1.4258-0.12109-0.63672 0.082031-1.2891 0.53906-1.7461l4.5273-4.5273c0.51172-0.51172 1.2656-0.69922 1.957-0.48438l10.402 3.2109 5.8594-5.8594c1.0898-1.0898 2.5625-1.6992 4.1016-1.6992s3.0156 0.61328 4.1016 1.6992c1.0898 1.0898 1.6992 2.5625 1.6992 4.1016 0 1.5391-0.61328 3.0156-1.6992 4.1016l-5.8594 5.8594 3.2109 10.406c0.21484 0.69141 0.027344 1.4453-0.48438 1.957l-4.5273 4.5273c-0.45703 0.45703-1.1094 0.66016-1.7461 0.53906-0.63672-0.12109-1.168-0.55078-1.4258-1.1406l-3.4141-7.8906-5.7422 5.7422-0.14844 3.1484c-0.007813 0.50391-0.21484 0.98828-0.57031 1.3438l-4.5078 4.5078c-0.47266 0.47266-1.1484 0.66797-1.8008 0.52734-0.64844-0.14453-1.1836-0.60547-1.4141-1.2305l-2.1719-5.8906-5.8906-2.1719c-0.625-0.23047-1.0898-0.76172-1.2305-1.4141-0.14453-0.64844 0.054688-1.3281 0.52734-1.8008l4.5078-4.5078c0.35547-0.35547 0.83984-0.5625 1.3438-0.57031l3.1484-0.14844zm25.438-17.23c-0.35547-0.35547-0.83984-0.55469-1.3438-0.55469s-0.98438 0.19922-1.3438 0.55469l-6.6914 6.6914c-0.51172 0.51172-1.2656 0.69922-1.957 0.48438l-10.406-3.2109-1.6641 1.6641 7.8906 3.4141c0.59375 0.25781 1.0195 0.78906 1.1406 1.4258 0.12109 0.63672-0.078125 1.2891-0.53906 1.7461l-8.2383 8.2383c-0.14453 0.14453-0.50391 0.46094-1.168 0.58984-0.56641 0.10938-2.3555 0.17969-3.4062 0.21484l-1.8047 1.8047 3.875 1.4297c0.53516 0.19922 0.95703 0.62109 1.1562 1.1562l1.4297 3.875 1.8047-1.8047c0.035156-1.0508 0.10547-2.8398 0.21484-3.4062 0.12891-0.66406 0.44531-1.0234 0.58984-1.168l8.2383-8.2383c0.45703-0.45703 1.1094-0.66016 1.7461-0.53906s1.168 0.55078 1.4258 1.1406l3.4141 7.8906 1.6641-1.6641-3.2109-10.406c-0.21484-0.69141-0.027344-1.4453 0.48438-1.957l6.6914-6.6914c0.35547-0.35547 0.55469-0.83984 0.55469-1.3438s-0.19922-0.98438-0.55469-1.3438z" fill-rule="evenodd"%3E%3Cpath d="m20.258 82.469c-0.76172 0.76172-2 0.76172-2.7617 0-0.76172-0.76172-0.76172-2 0-2.7617l10.199-10.199c0.76172-0.76172 2-0.76172 2.7617 0 0.76172 0.76172 0.76172 2 0 2.7617z" fill-rule="evenodd"%3E%3Cpath d="m72.289 30.441c-0.76172 0.76172-2 0.76172-2.7617 0-0.76172-0.76172-0.76172-2 0-2.7617l10.199-10.199c0.76172-0.76172 2-0.76172 2.7617 0s0.76172 2 0 2.7617z" fill-rule="evenodd"%3E%3Cpath d="m93.98 5.9883c2.2773 2.2773 2.2773 5.9766 0 8.2578-2.2773 2.2773-5.9766 2.2773-8.2578 0-2.2773-2.2773-2.2773-5.9766 0-8.2578 2.2773-2.2773 5.9766-2.2773 8.2578 0zm-2.7617 2.7617c-0.75391-0.75391-1.9805-0.75391-2.7344 0s-0.75391 1.9805 0 2.7344 1.9805 0.75391 2.7344 0 0.75391-1.9805 0-2.7344z" fill-rule="evenodd"%3E%3Cpath d="m14.262 85.707c2.2773 2.2773 2.2773 5.9766 0 8.2578-2.2773 2.2773-5.9766 2.2773-8.2578 0-2.2773-2.2773-2.2773-5.9766 0-8.2578 2.2773-2.2773 5.9766-2.2773 8.2578 0zm-2.7617 2.7617c-0.75391-0.75391-1.9805-0.75391-2.7344 0s-0.75391 1.9805 0 2.7344 1.9805 0.75391 2.7344 0 0.75391-1.9805 0-2.7344z" fill-rule="evenodd"%3E%3C/svg%3E');
+}
+
+.opct35 {
+  opacity: 0.35;
+}
+
+input:disabled:hover {
+  cursor: default; /* or 'not-allowed' if you prefer */
+}
+
+/* Default radio button border */
+.radio-btn {
+  border: 2px solid #ff7043; /* Orange color */
+}
+
+/* Change the border color when checked */
+.radio-btn:checked {
+  border-color: #ff5722; /* Darker orange when checked */
+}
+
+.selected-date {
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.selected-date.sliding {
+  transform: scale(1.2);
+  background-color: #e0f7fa; /* Light cyan background on selected */
+}
+
+input[type="checkbox"] {
+  appearance: none; /* Removes default browser styling */
+  width: 20px;
+  height: 20px;
+  background: #fafafb; /* Light gray background */
+  border: 2px solid #fd8f4f; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer;
+  position: relative;
+  transition: all 0.1s ease; /* Smooth transition */
+}
+
+input[type="checkbox"]:checked {
+  background: #ffffff; /* Orange background for checked state */
+  border-color: #f97316; /* Orange border for checked state */
+}
+
+input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  /* top: 2px; */
+  width: 6px;
+  height: 13px;
+  border: solid rgb(249, 83, 18); /* White checkmark */
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg); /* Creates the checkmark shape */
+}
+
+
+
+.buttonfx{
+  color: black; /* button text color */
+  outline: none;
+  background: transparent;
+  border: none;
+  border-bottom: 4px solid #eee;
+  letter-spacing: 0.0625em;
+  padding: 8px 10px; 
+  text-transform: uppercase;
+  font: bold 16px 'Bitter', sans-serif; /* use google font */
+  line-height: 2;
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-decoration: none; /* remove underline if using A instead of BUTTON tag */
+  overflow: hidden;
+  transition: all .5s;
+}
+
+/* //// Default effect: Slide from Top  //// */
+
+.buttonfx:before,
+.buttonfx:after{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  background: #259f6c; /* onhover background color */
+  z-index: -1;
+  transform: translate3D(0,-100%,0); /* move elements above button so they don't appear initially */
+  transition: all .5s;
+}
+
+.buttonfx:before{
+  background: #fafcd6; /* button default background color */
+  z-index: -2;
+  transform: translate3D(0,0,0);
+}
+
+.buttonfx:hover{
+  color: white;
+}
+
+.buttonfx:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+/* //// Slide Left  //// */
+
+.slideleft:after{
+  top: 0;
+  z-index: -1;
+  transform: translate3D(-101%,0,0);
+}
+
+.slideleft:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+/* //// Slide Corner  //// */
+
+.slidebottomleft:after{
+  transform: translate3D(-100%,100%,0);
+}
+
+.slidebottomleft:hover:after{
+  transform: translate3D(0,0,0);
+  transition: all .5s;
+}
+
+/* //// Angle In  //// */
+
+
+.angleinleft:after{
+  width: 200%;
+  transform-origin: 0 bottom;
+  transform: translate3D(-50%,0,0) rotate(-50deg);
+}
+
+.angleinleft:hover:after{
+  transform: rotate(0deg);
+  transition: all .5s;
+}
+
+/* //// Curtain Down  //// */
+
+.curtaindown{
+  border: 1px solid #eee;
+  border-bottom: 4px solid #eee;
+}
+
+.curtaindown:before,
+.curtaindown:after{
+  background: #259f6c;
+  transform: translate3D(0,-100%,0);
+}
+
+.curtaindown:after{
+  transform: translate3D(0,100%,0);
+}
+
+.curtaindown:hover:before,
+.curtaindown:hover:after{
+  transform: translate3D(0,-50%,0);
+  transition: all .5s;
+}
+
+.curtaindown:hover:after{
+  transform: translate3D(0,50%,0);
+}
+
+/* //// Curtain Up  //// */
+
+.curtainup{
+  transform-style: preserve-3d;
+}
+
+.curtainup:before,
+.curtainup:after{
+  transform-origin: center center;
+  transform: scale(1,0);
+}
+
+
+.curtainup:hover:before,
+.curtainup:hover:after{
+  transform: scale(1);
+  border-radius: 0;
+}
+
+/* //// Double Angle In  //// */
+
+.angleindouble{
+  border: 1px solid #eee;
+  border-bottom: 4px solid #eee;
+}
+
+.angleindouble:before{
+  top: 0;
+  left: 0;
+  width: 150%;
+  background: #259f6c;
+  transform-origin: 0 bottom;
+  transform:  translateX(-100%) rotate(-30deg);
+}
+
+.angleindouble:after{
+  top: 0;
+  left: auto;
+  right: 0;
+  width: 150%;
+  transform-origin: right bottom;
+  transform: translateX(100%) rotate(30deg);
+}
+
+.angleindouble:hover:before{
+  left: 0;
+  transform: rotate(0deg);
+  transition: all .5s;
+}
+
+.angleindouble:hover:after{
+  right: 0;
+  transform: rotate(0deg);
+  transition: all .5s;
+}
+
+
+/* //// Double Take  //// */
+
+.doubletake:before,
+.doubletake:after{
+  width: 200%;
+  background: #259f6c;
+  transform-origin: 0 bottom;
+  transform: translate3D(-50%,0,0) rotate(-50deg);
+}
+
+.doubletake:before{
+  opacity: .4;
+}
+
+.doubletake:hover:before,
+.doubletake:hover:after{
+  transform: rotate(0deg);
+  transition: all .25s;
+}
+
+.doubletake:hover:after{
+  transition-delay: .25s;
+}
