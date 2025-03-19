@@ -94,13 +94,13 @@ const Visa = () => {
 
       {/* Search Box */}
       <div className="flex items-center justify-center h-[30vh] w-full">
-        <div className="w-full max-w-2xl bg-white bg-opacity-60 p-6 rounded-xl shadow-lg text-center text-black">
+        <div className="w-full max-w-2xl bg-white bg-opacity-60 p-6 rounded-md shadow-lg text-center text-black">
           <h2 className="text-2xl font-bold mb-4">Where To?</h2>
           <div className="flex flex-col sm:flex-row gap-4">
             <select
               id="destination"
               name="destination"
-              className="w-full  rounded-lg px-4 py-3  text-black focus:outline-none focus:ring-2 focus:ring-[#4A90E2]"
+              className="w-full  rounded-md px-4 py-3  text-black focus:outline-none focus:ring-2 focus:ring-[#4A90E2]"
               onChange={(e) => setSelectedCountry(e.target.value)}
             >
               <option value="">Select a destination</option>
@@ -112,7 +112,7 @@ const Visa = () => {
             </select>
             <button
               type="button"
-              className="bg-[#fb923c] hover:bg-[#0e92e8] text-white font-semibold px-6 py-3 rounded-lg shadow-md transition-all"
+              className="bg-[#fb923c] hover:bg-[#0e92e8] text-white font-semibold px-8 py-2 rounded-md shadow-md transition-all"
               onClick={() => handleClick(selectedCountry)}
             >
               Search
@@ -127,14 +127,14 @@ const Visa = () => {
       </p>
 
       {/* Visa Cards */}
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-16">
         {countryData.map((country, index) => (
           <div
             key={index}
-            className="bg-white  bg-opacity-60 shadow-lg p-6 rounded-xl transform transition-all hover:scale-105 hover:shadow-2xl cursor-pointer text-black"
+            className="bg-white  bg-opacity-80 shadow-lg p-6 rounded-md transform transition-all hover:scale-105 hover:shadow-2xl cursor-pointer text-black"
           >
             <img
-              className="w-full h-40 object-cover rounded-lg"
+              className="w-full h-48 object-cover rounded-md"
               src={country.image}
               alt={`${country.name} Image`}
             />
@@ -145,7 +145,7 @@ const Visa = () => {
                   ₹{country.minPrice} - ₹{country.maxPrice}
                 </p>
               </div>
-              <ul className="text-sm bg-[#f0f8ff] text-[#0e92e8] mt-2 p-3 rounded-lg shadow-md border border-[#0e92e8]">
+              <ul className="text-sm bg-[#f0f8ff] text-[#0e92e8] mt-2 p-3 rounded-md shadow-md border border-[#0e92e8]">
                 {country.visaTypes.map((visa, i) => (
                   <li key={i} className="py-1 flex items-center gap-2">
                     <span className="w-2 h-2 bg-[#0e92e8] rounded-full"></span>
@@ -155,12 +155,12 @@ const Visa = () => {
               </ul>
 
               {country.status === 'coming soon' ? (
-                <p className="mt-4 w-full bg-[#FF3B30] text-white font-semibold px-4 py-2 rounded-lg shadow-md text-center">
+                <p className="mt-4 w-full bg-[#FF3B30] text-white font-semibold px-4 py-2 rounded-md shadow-md text-center">
                   Coming Soon
                 </p>
               ) : (
                 <button
-                  className="mt-4 w-full bg-[#fb923c] text-white font-semibold px-4 py-2 rounded-lg shadow-md hover:bg-[#0e92e8] transition-all"
+                  className="mt-4 w-full bg-[#fb923c] text-white font-semibold px-4 py-2 rounded-md shadow-md hover:bg-[#0e92e8] transition-all"
                   onClick={() => handleClick(country.name)}
                 >
                   Apply Now
